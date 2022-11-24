@@ -4,34 +4,65 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login & Sign up Form</title>
         <link rel="stylesheet" href="style.css">
-        <title>Sign up/Login</title>
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <main class="flex-container">
-            <section class="main-container">
-                <div class=images>
-                    <img src="images/football.jpg" width="300px" height="300px">
+        <main>
+            <div class="box">
+                <div class="inner-box">
+
+                    <div class="forms-wrap-sign-in">
+                        <div class="heading">
+                            <h2>Welcome Back</h2>
+                            <h6>Not registered yet?</h6>
+                            <a href="#" class="toggle-in">Sign up</a>
+                        </div>
+                        <div class="actual-form">
+                            <div class="input-wrap">
+                                <input type="text" placeholder="Username" name="username" class="input-field" required><br>
+                                <input type="password" placeholder="Password" name="password" class="input-field" required><br><br>
+                                <button type="button" class="sign-btn">Sign In</button>
+                                <p class="text">
+                                    Forgotten your password or your login details?
+                                    <a href="#">Get help</a> signing in
+                                </p>
+                            </div>    
+                        </div>
+                    </div>
+
+                    <div class="forms-wrap-sign-up">
+                        <div class="heading">
+                            <h2>Get Started</h2>
+                            <h6>Already have an account?</h6>
+                            <a href="#" class="toggle-up">Sign in</a>
+                        </div>
+                        <div class="actual-form">
+                            <div class="input-wrap">                                
+                                <input type="text" placeholder="Username" name="username" class="input-field" required><br>
+                                <input type="email" placeholder="Email" name="email" class="input-field" required><br>
+                                <input type="password" placeholder="Password" name="password" class="input-field" required><br>
+                                <input type="password" placeholder="Re-enter Password" name="Re-enter password" class="input-field" required><br><br>
+                                <button type="button" class="sign-btn">Sign Up</button>
+                                <p class="text">
+                                    By signing up, I agree to the
+                                    <a href="#">Terms of Services</a> and
+                                    <a href="#">Privacy Policy</a>
+                                </p>
+                            </div>    
+                        </div>
+                    </div>
+
+
+                    <div class="images">
+                        <img src="images/football.jpg" class="football" width="400px" height="400px">
+                        <p class="image-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias assumenda harum perferendis totam reiciendis est, soluta aperiam molestiae necessitatibus ad saepe alias quaerat vero, minus officia labore perspiciatis corporis et.</p>
+                    </div> 
                 </div>
-                <!-- <h2>Main Content</h2> -->
-                <!-- <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptatum repellat eius laudantium aliquid perspiciatis dolorum veniam reprehenderit, nobis illum exercitationem quam praesentium quisquam error labore, ullam accusantium sed? Praesentium, veritatis. Doloribus libero ipsa praesentium! Quas voluptatibus exercitationem ab eius harum ex at, hic doloribus, voluptates rem eaque tempora aliquid.
-                </p> -->
-            </section>
-            <aside class="sidebar">
-                <div class="content">
-                    <h2>Login</h2>
-                    <form>
-                        <label>Username:</label><br>
-                        <input type="text" placeholder="Enter Username" name="username" required><br>
-                        <label>Password:</label><br>
-                        <input type="password" placeholder="Enter Password" name="password" required><br><br>
-                        <input type="submit" value="Submit">
-                    </form>  
-                </div>
-                <!-- <h2>Sidebar</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium consectetur alias recusandae saepe. Sunt, accusamus omnis perferendis autem fugiat laboriosam eius blanditiis! A natus officiis rem molestiae possimus animi laborum illo maxime id, provident delectus beatae harum pariatur in. Et officia perspiciatis, eaque quae possimus hic commodi eligendi in repudiandae!</p> -->
-            </aside>
+            </div>
         </main>
+        <!--Javascript file-->
+        <script src="app.js"></script>
     </body>
 </html>

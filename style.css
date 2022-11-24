@@ -4,42 +4,6 @@
     box-sizing: border-box;
 }
 
-/* .flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* background-color: aqua; */
-/* } */
-
-/* .main-container {
-    background-color: blue;
-    color: white;
-    flex: 1;
-    max-width: 500px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 32px 0 0 32px;
-}
-
-.sidebar {
-    background-color: green;
-    color: white;
-    flex: 1;
-    max-width: 500px;
-    height: 500px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0 32px 32px 0;
-
-}
-
-.content>h2 {
-    text-align: center;
-} */
-
 /* #1f2024 (black)
 #fdffff (white)
 #eb4342 (red) */
@@ -75,46 +39,50 @@ main {
 .inner-box {
     width: calc(100% - 4.1rem);
     height: calc(100% - 4.1rem);
-    /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.forms-wrap {
+.forms-wrap-sign-in {
     width: 50%;
     height: 100%;
     background-color: #eb4342;
     border-radius: 2rem 2rem 2rem 2rem;
-    /* text-align: center; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    /* background-color: blue;
-    max-width: 500px; */
+    /* display: none; */
+}
+
+.forms-wrap-sign-up {
+    width: 50%;
+    height: 100%;
+    background-color: #eb4342;
+    border-radius: 2rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    /* display: none; */
 }
 
 .images {
     width: 50%;
     height: 100%;
-    /* background-color: blue; */
 }
 
 .heading {
-    /* text-align: center; */
-    /* background-color: #1f2024; */
     max-width: 300px;
     color: #fdffff;
 }
 
 .actual-form {
-    /* background-color: #1f2024; */
     max-width: 300px;
     color: #fdffff;
-    /* display:flex;
-    justify-content: center; */
 }
 
 .heading h2 {
@@ -197,12 +165,10 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background: red; */
 }
 
 .image-text {
     max-width: 400px;
-    /* background-color: blue; */
 }
 
 .football {
@@ -210,3 +176,11 @@ main {
     margin-bottom: -20px;
 }
 
+
+main.sign-up-mode .forms-wrap-sign-in {
+    display: none;
+}
+
+main.sign-in-mode .forms-wrap-sign-up {
+    display: none;
+}

@@ -67,7 +67,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    /* display: none; */
+    display: none;
 }
 
 .images {
@@ -177,10 +177,10 @@ main {
 }
 
 
-main.sign-up-mode .forms-wrap-sign-in {
+/* main.sign-up-mode .forms-wrap-sign-in {
     display: none;
 }
 
 main.sign-in-mode .forms-wrap-sign-up {
     display: none;
-}
+} */
